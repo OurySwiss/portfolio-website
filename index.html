@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yannick Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0a139d519e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="/images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#MySkills">Skills</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>IT-Spezialist</p>
+        <h1>Hello, I'm <Span>Yannick</Span><br>Andres and I'm an<br>IT-apprentice</h1>
+      </div>
+    </div>
+  </div> 
+<script src="sidemenu.js"></script>
+
+ <!--About-->
+<div id="about"></div>
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="/images/user.jpg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Hello, my name is Yannick Andres and I am a computer scientist 
+          in the field of application development and I am in my 1st year 
+          of apprenticeship. I started my apprenticeship at Swisscom this 
+          summer. Since then I have worked my way into programming and have 
+          learned important basics in html, css and java script.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+            <p class="tab-links" onclick="opentab('languages')">Languages</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>HTML&CSS</span><br>Code simple Websides using HTML and CSS</li>
+              <li><span>Java Script</span><br>I know the Java Script basics</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="projects">
+            <ul>
+              <li><span>02.08.22 - First Steps</span><br>Microsoft training<br>Introduction Swisscom</li>
+              <li><span>15.08.22 - Team HIVE</span><br>Fullstack Developer (Front&Backend)</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="languages">
+            <ul>
+              <li><span>German</span><br>Native Language</li>
+              <li><span>French</span><br>Native Language</li>
+              <li><span>English</span><br>Very good / advanced English</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="about.js"></script>
+
+<!------------MySkills------------->
+
+<div id="MySkills">
+  <div class="container">
+    <h1 class="sub-title">My Skills</h1>
+    <div class="skills-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>HTML&CSS</h2>
+        <p>The Hive Mobile page was my first real job at Team HIVE. 
+          During my project at Hive I learned the frontend basics like Html and Css 
+          and used them when programming my first website.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-square-js"></i>
+        <h2>Java Script</h2>
+        <p>In my project at Hive i learnd some of the Java Basics, and my goal is
+          it to perfect it and learn more Java Script</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-vuejs"></i>
+        <h2>Vue&ReactJs</h2>
+        <p>My next goals are to learn the two frameworks ReactJs and 
+          Vue so that I can be even more useful in other projects.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------Portfolio------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="/images/portfolio-site.jpg">
+        <div class="layer">
+          <h3>Portfolio Website</h3>
+          <p>I programmed this website because I think it might be useful 
+          for applications in the future.</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="/images/hive-site.jpg">
+        <div class="layer">
+          <h3>HIVE Website </h3>
+          <p>Making this website was my first real assignment in the 
+            HIVE project.</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="/images/goal-site.jpg">
+        <div class="layer">
+          <h3>Next job</h3>
+          <p>I will ask my Project Provider if I can work with the ReactJs Framework.</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+<!------------ContactMe------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>yannick.andres@swisscom.com</p>
+        <p><i class="fa-solid fa-square-phone"></i> 0793285032</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/yannick-andres-b73198258/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/ww.yxnnick/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="/images/Lebenslauf-Yannick.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name='submit-to-google-sheet'>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Yannick Andres</p>
+  </div>
+</div>
+<script src="form.js"></script>
+
+</body>
+
+</html>

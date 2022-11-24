@@ -1,0 +1,10 @@
+{
+    "name": "portfolio-website",
+    "description": "portfolio",
+    "main": "form.js",
+    "scripts": {
+        "test": "echo \"Error: no testspecified\""
+    },
+    "author": "Yannick Andres",
+    "license": "ISC"
+}
